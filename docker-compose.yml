@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  geyser:
+    container_name: geyser
+    build: .build
+    ports:
+      - 19132:19132/udp
+    volumes:
+      - ./data:/data
+    environment:
+      GH_TOKEN: 
